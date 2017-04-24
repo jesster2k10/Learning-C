@@ -6,10 +6,12 @@
 //  Copyright © 2017 Jesse Onolememen. All rights reserved.
 //
 
+// This is my first C++ Program
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+int main() {
+    cout << "My name is Jesse Onolemememen\n";
     return 0;
 }
