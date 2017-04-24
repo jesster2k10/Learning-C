@@ -9,32 +9,47 @@
 // This is my first C++ Program
 #include <iostream>
 #include <string>
+#include <ctime>
 
 using namespace std;
 
 int main() {
+    int number_of_gumballs;
+    int user_guess;
+    int guesses = 0;
     
-    /*
-    string name;
-    string age;
+    while (true) {
+        system("CLS"); // clears the screen
+        cin.clear();
+        guesses = 0;
     
-    cout << "What is your name? ";
-    getline(cin, name);
-    cout << "Thank you, " << name << endl;
-    cout << "How old are you, " << name << "?\n";
-     
-    getline(cin, age);
-    cout << "God, you're only " << age << " years old?\n";
-     */
+        srand(static_cast<unsigned int>(time(0)));
+        number_of_gumballs = rand() % 1000 + 1;
     
-    cout << 5 + 4 << endl;
-    cout << 5 - 4 << endl;
-    cout << 5 * 4 << endl;
-    cout << 5 / 4 << endl;
-    cout << 5 % 4 << endl;
+        cout << "How many gumballs are in the jar?" << endl;
     
-    string y;
-    getline(cin, y);
-
+        do {
+            cout << "Enter your guess: ";
+            cin >> user_guess;
+        
+            if (user_guess > number_of_gumballs) {
+                cout << "Too High!" << endl << endl;
+            }
+        
+            if (user_guess > number_of_gumballs) {
+                cout << "Too Low!" << endl << endl;
+            }
+        
+            guesses ++;
+        }
+    
+        while (user_guess > number_of_gumballs || user_guess > number_of_gumballs);
+        cout << "You guessed the right amount of gumballs!" << endl << endl;
+        cout << "You took " << guesses << " guesses" << endl << endl;
+        
+        system("PAUSE");
+    }
+    
     return 0;
+    
 }
