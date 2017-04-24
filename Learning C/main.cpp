@@ -8,55 +8,33 @@
 
 // This is my first C++ Program
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main() {
-    /*
-    int x = 0;
-    int cars = 14;
-    int debt = -1000;
-    float cash = 2.32;
-    double credit = 32.32;
-    char a = 'a';
-    char* sandwich = "sandwich";
-    bool does_she_like_me = true;
-    auto do_i_have_pants_on = false;
-    auto blank_check = 200.00;
-    int over_9000 = INT_MAX;
-    
-    cout << over_9000 << endl;
-    
-    int _ = 5;
-    
-    cout << _ << endl;
-    
-    cout << sizeof(char) << endl;
-    cout << sizeof(int) << endl;
-    cout << sizeof(float) << endl;
-    cout << sizeof(double) << endl;
-    cout << sizeof(bool) << endl;
-    
-    cout << ' ' << endl;
-    cout << sizeof(short int) << endl;
-    cout << sizeof(long int) << endl;
-    cout << sizeof(long long int) << endl; */
     
     /*
-    signed y = -1;
-    unsigned int x = -1;
+    string name;
+    string age;
     
-    cout << x << endl;
-    cout << y << endl; */
+    cout << "What is your name? ";
+    getline(cin, name);
+    cout << "Thank you, " << name << endl;
+    cout << "How old are you, " << name << "?\n";
+     
+    getline(cin, age);
+    cout << "God, you're only " << age << " years old?\n";
+     */
     
-    cout << INT_MIN << endl;
-    cout << INT_MAX << endl;
-    cout << LONG_MIN << endl;
-    cout << LONG_MAX << endl;
-    cout << SHRT_MIN << endl;
-    cout << SHRT_MAX << endl;
-    cout << USHRT_MAX << endl;
+    cout << 5 + 4 << endl;
+    cout << 5 - 4 << endl;
+    cout << 5 * 4 << endl;
+    cout << 5 / 4 << endl;
+    cout << 5 % 4 << endl;
+    
+    string y;
+    getline(cin, y);
 
-    
     return 0;
 }
